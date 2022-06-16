@@ -1,4 +1,5 @@
-function checkAge(age){
+function checkAge(age)
+{
     if (age < 18){
         console.log('You don’t have access cause your age is ' + age + ', it’s less then ' + 18 )
     }
@@ -11,4 +12,4 @@ function checkAge(age){
     
     }
 
-checkAge(5)
+    checkAge(33)

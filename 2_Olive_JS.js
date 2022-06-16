@@ -1,5 +1,5 @@
 function checkAge(age){
-if (!Number(age)){
+if (typeof age == '!number'){
      return console.log('You have mistake')
 }
         if (age < 18){
@@ -14,4 +14,4 @@ if (!Number(age)){
     }
 
 
-checkAge(19)
+checkAge(56)
