@@ -1,19 +1,20 @@
 
 
 function checkAge(age)
- {if (age && isNaN(age)){
-    console.log('go away')
- }
+ {if (age && !isNaN(age)){
  
         if (age < 18){
-            console.log('You don’t have access cause your age is ' + age + ', it’s less then ' + 18 )
+            alert('You don’t have access cause your age is ' + age + ', it’s less then ' + 18 )
                     }
         else if (age >= 18 && age <= 60){
-            console.log('Welcome  !')
+            alert('Welcome  !')
                     }
         else if (age > 60){
-            console.log('Keep calm and look Culture channel')
+            alert('Keep calm and look Culture channel')
                     }
+    } else alert('go away')
 }
 
-checkAge(33)
+let a = prompt ('Enter your age')
+
+checkAge (a)
