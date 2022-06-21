@@ -1,10 +1,10 @@
 function getVowels(str) {
     const vowel = 'aeiouyAEIOUY'
     const consonants = 'bcdfghjklmnpqrstvwxzBCDFGHJKLMNPQRSTVWXZ'
-    var v = 0
-    var c = 0
+    let v = 0
+    let c = 0
 
-    for (var x = 0; x < str.length; x++)
+    for (let x = 0; x < str.length; x++)
     {
         if (vowel.indexOf(str[x]) !== -1){
             v +=1}
@@ -16,4 +16,4 @@ function getVowels(str) {
 return 'Гласных у тебя '+ v + ' штуки, а согласных ' + c
 }
 
-console.log(getVowels('lKKololOO'))
+console.log(getVowels('lKKoko'))
