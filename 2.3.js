@@ -1,6 +1,6 @@
 function getVowels(str) {
-    const vowel = 'aeiouy'
-    const consonants = 'bcdfghjklmnpqrstvwxz'
+    const vowel = 'aeiouyAEIOUY'
+    const consonants = 'bcdfghjklmnpqrstvwxzBCDFGHJKLMNPQRSTVWXZ'
     var v = 0
     var c = 0
 
@@ -10,9 +10,10 @@ function getVowels(str) {
             v +=1}
         {if (consonants.indexOf(str[x]) !== -1){
             c +=1}
-    }
 
+        }
 }
 return 'Гласных у тебя '+ v + ' штуки, а согласных ' + c
 }
-console.log(getVowels('something in my heart makes me feeling better - i think it is JS_homework'))
+
+console.log(getVowels('lKKololOO'))
