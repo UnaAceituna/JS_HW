@@ -1,4 +1,4 @@
-function length(str){
+function isPalindrome(str){
     str = str.toLowerCase()
     let n = Math.floor(str.length/2)
     let N = str.length - 1  
@@ -9,6 +9,6 @@ function length(str){
   }
   return true;
 }  
-console.log(length('Abba'))
-console.log(length('abba'))
-console.log(length('abvbba'))
+console.log(isPalindrome('Abba'))
+console.log(isPalindrome('abba'))
+console.log(isPalindrome('abvbba'))
