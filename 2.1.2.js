@@ -1,4 +1,6 @@
-function checkExp (b){
-    console.log(2**b)
+const pow = function checkExp (b){
+    for(let i = 1; i <= b;i++) {
+    console.log(2**i)
 }
-checkExp(2)
+}
+pow(10)
