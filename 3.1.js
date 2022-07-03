@@ -80,10 +80,14 @@ const users = [
 ];
 
 
-function UserDate(date){
-return users.filter(item => item.registrationDate == date)
-}
-console.log(UserDate('10.10.2021'))
 
-/*let user = users.filter(item => item.registrationDate == '10.10.2021' && item.registrationDate == '09.10.2021')
+
+/*const user = users.filter(el => (el.registrationDate === '09.10.2021' || el.registrationDate === '10.10.2021'))
 console.log(users)*/
+
+const filtered = users.filter((key) => {
+    if(key.registrationDate === '09.10.2021' || key.registrationDate === '10.10.2021'){
+        return users
+    }
+})
+    console.log(filtered)
